@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Tray_CheckoutRedir",
+    "type": "magento-module",
+    "license": "OSL-v3.0",
+    "homepage": "",
+    "description": "Extensão Tray Checkout API para Magento",
+    "authors": [
+    {
+        "name": "TrayCheckout",
+        "email": "integracao@traycheckout.com.br"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
