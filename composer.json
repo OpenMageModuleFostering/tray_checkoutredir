@@ -3,11 +3,11 @@
     "type": "magento-module",
     "license": "OSL-v3.0",
     "homepage": "",
-    "description": "Extensão Tray Checkout API para Magento",
+    "description": "Extensão Tray Checkout para Magento",
     "authors": [
     {
-        "name": "TrayCheckout",
-        "email": "integracao@traycheckout.com.br"
+        "name": "Igor",
+        "email": "ifredi@tray.net.br"
     }
 ],
     "suggest": {

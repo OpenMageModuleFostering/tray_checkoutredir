@@ -21,7 +21,7 @@
 <config>
     <modules>
         <Tray_CheckoutRedir>
-            <version>0.5.0</version>
+            <version>0.1.10</version>
         </Tray_CheckoutRedir>
     </modules>
     <global>
@@ -138,6 +138,7 @@
                   <order_status>pending</order_status>
                   <title>Tray Checkout</title>
                   <allowspecific>1</allowspecific>
+                  <retorno>http://www.urldoseusite.com.br/index.php/CheckoutRedir_Geral/standard/success/</retorno>
             </checkoutredir_geral>
         </payment>
 		<checkoutredir>
