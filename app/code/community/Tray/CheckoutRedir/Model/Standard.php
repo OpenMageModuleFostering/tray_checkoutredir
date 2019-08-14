@@ -165,7 +165,8 @@ class Tray_CheckoutRedir_Model_Standard extends Mage_Payment_Model_Method_Abstra
         $sArr = array();
         $number_contact = substr(str_replace(" ","",str_replace("(","",str_replace(")","",str_replace("-","",$a->getTelephone())))),0,2) . substr(str_replace(" ","",str_replace("-","",$a->getTelephone())),-8);
 
-		$sArr['token_account']= $this->getConfigData('token');
+        $sArr['token_account']= $this->getConfigData('token');
+        $sArr['free']= "MAGENTO_v".(string) Mage::getConfig()->getNode()->modules->Tray_CheckoutRedir->version;
         $sArr['order_number']= $this->getConfigData('prefixo').$orderIncrementId;
 
     	// Dados de endereço
@@ -238,7 +239,7 @@ class Tray_CheckoutRedir_Model_Standard extends Mage_Payment_Model_Method_Abstra
     {
          if ($this->getConfigData('sandbox') == '1')
          {
-         	return 'http://checkout.sandbox.tray.com.br/payment/transaction';
+         	return 'https://checkout.sandbox.tray.com.br/payment/transaction';
          } else {
          	return 'https://checkout.tray.com.br/payment/transaction';
 //         	return 'http://gpereira.checkout.traycheckout.desenvolvimento.tray.intranet/payment/transaction';
